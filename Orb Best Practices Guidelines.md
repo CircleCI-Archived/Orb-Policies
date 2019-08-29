@@ -1,6 +1,7 @@
 # Orb Best Practices Guidelines
+A collection best practices for authoring [orbs](https://circleci.com/docs/2.0/orb-intro/#section=configuration).
 
-Refer to the following guidelines to ensure orb standardization and utility.
+CircleCI orbs are shareable packages of configuration elements, including jobs, commands, and executors. To begin learning how to create your own orb, check out our docs on [Reusable config](https://circleci.com/docs/2.0/reusing-config/) and get started with the [Orb Starter Kit (Beta)](https://github.com/CircleCI-Public/orb-starter-kit).
 
 
 ## Guidelines
