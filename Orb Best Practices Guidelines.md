@@ -60,3 +60,5 @@ CircleCI orbs are shareable packages of configuration elements, including jobs, 
             *   Patch: Minor bug fixes, metadata updates, or other safe actions.
     *   View our Orb Deployment best practices here: [https://docs.google.com/document/d/1MqQCo8aeYjvGJAa0v60L2FJelLFjWP1IgkWuBfMiC3c](https://docs.google.com/document/d/1MqQCo8aeYjvGJAa0v60L2FJelLFjWP1IgkWuBfMiC3c) [NOT COMPLETE]
     *   This section is handled automatically via the Orb Starter Kit.
+* GitHub/Bitbucket
+    * GitHub (and maybe Bitbucket) has the ability to tag repositories. This is used as a datapoint in GitHub search but more importantly, in their Explore page to group repositories by tags. We suggest using the tag `circleci-orbs` for a repo containing an orb. This allows users to view a listing of orb repos whether they are CircleCI, Partner, or community orbs on [this page](https://github.com/topics/circleci-orbs).
