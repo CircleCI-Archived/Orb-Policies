@@ -14,6 +14,7 @@ CircleCI orbs are shareable packages of configuration elements, including jobs, 
     *   Include link to website in description.
     *   Define any prerequisites such as obtaining an API key in the description.
     *   Be consistent and concise in naming your orb elements. For example, don't mix "kebab case" and "snake case".
+    *   GitHub repository must contain `circleci-orb` topic. [How to add a topic](https://help.github.com/en/articles/classifying-your-repository-with-topics#adding-topics-to-your-repository)
 *   **Examples:**
     *   Must have at least 1 example.
     *   Show Orb version as `x.y` (patch version may not need to be included)
