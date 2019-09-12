@@ -33,7 +33,7 @@ CircleCI orbs are shareable packages of configuration elements, including jobs, 
             *   **setup**
 *   **Parameters:**
     *   When possible, use defaults for parameters unless a user input is essential.
-    *   Utilize the “env_var_name” parameter type to secure API keys or other sensitive data. 
+    *   Utilize the [“env_var_name” parameter type](https://circleci.com/docs/2.0/reusing-config/#environment-variable-name) to secure API keys or other sensitive data. 
     *   [Injecting steps as a parameter](https://circleci.com/docs/2.0/reusing-config/#steps) is a useful way to run user defined steps within a job between your orb-defined steps.Good for if you need to perform an action both before and after user-defined tasks - for instance, you could run user-provided steps between your caching logic inside the command.
 *   **Jobs:**
     *   Jobs should utilize Commands defined within the Orb to orchestrate common use cases for this Orb.
