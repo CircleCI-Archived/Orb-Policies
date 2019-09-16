@@ -14,6 +14,13 @@ CircleCI orbs are shareable packages of configuration elements, including jobs, 
     *   Include link to website in description.
     *   Define any prerequisites such as obtaining an API key in the description.
     *   Be consistent and concise in naming your orb elements. For example, don't mix "kebab case" and "snake case".
+    *   Naming:
+        * Your `namespace` should reflect the name of your oganization or company, of which may have many orbs.
+            *   ex: `circleci`, `vmware`, `cypress-io`
+        * Your `orb name` should reflect the product, utility, or service with which this orb will interact with.
+            *   ex: `node`, `codestream`, `cypress`
+        *  Do not repeat information. ex: Any install command should simply be named `install` rather than `install-x` as the full command will be `orbName/install`
+        * Do not include `orb` or `-orb` in the name of your orb.
 *   **Examples:**
     *   Must have at least 1 example.
     *   Show Orb version as `x.y` (patch version may not need to be included)
@@ -21,6 +28,7 @@ CircleCI orbs are shareable packages of configuration elements, including jobs, 
     *   If applicable, you may want to showcase the use of [pre and post steps](https://circleci.com/docs/2.0/reusing-config/#using-pre-and-post-steps) in conjunction with an Orb’s Job. 
     *   Example(s) should demonstrate common use case scenerios.
 *   **Commands:**
+    *   Command names should be short and easily understood.
     *   In general, all Orbs should contain at least one Command. 
         *   Some exceptions may include creating an Orb for the sole task of providing an executor.
     *   Combine one or more parameterizable steps to simplify a task.
