@@ -19,6 +19,7 @@ CircleCI orbs are shareable packages of configuration elements, including jobs, 
     *   Show Orb version as `x.y` (patch version may not need to be included)
     *   Example should include most common/simplest use case calling a top-level job or other base-case elements if no job is present.
     *   If applicable, you may want to showcase the use of [pre and post steps](https://circleci.com/docs/2.0/reusing-config/#using-pre-and-post-steps) in conjunction with an Orb’s Job. 
+    *   Example(s) should demonstrate common use case scenerios.
 *   **Commands:**
     *   In general, all Orbs should contain at least one Command. 
         *   Some exceptions may include creating an Orb for the sole task of providing an executor.
