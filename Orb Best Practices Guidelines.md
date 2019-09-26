@@ -1,3 +1,10 @@
+# This document has been integrated into our live documentation
+https://circleci.com/docs/2.0/orbs-best-practices/#orb-best-practices-guidelines
+
+This file is no longer going to be updated but will remain up for the time being to redirect users to the new live documentation. Please submit all PRs against the live docs.
+
+---
+
 # Orb Best Practices Guidelines
 A collection best practices for authoring [orbs](https://circleci.com/docs/2.0/orb-intro/#section=configuration).
 
