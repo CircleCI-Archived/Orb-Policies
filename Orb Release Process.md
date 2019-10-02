@@ -40,26 +40,44 @@ Our goal is to get to the “Future Release Process” (below) but we’re waiti
 
 The following are the steps the orb release process should go through:
 
-
+## Feature Branch Work [Contributors & Maintainers]
 
 *   An orb should already be written in destructured format and ideally by the Orb Starter Kit
-*   Changes should be made in a non-master branch. Non-draft PRs should be opened when it’s ready for review
+*   Changes must be made on a non-master branch. Non-draft PRs should be opened when it’s ready for review
 *   `orb-tools` will pack the orb during a build
 *   Validate -> lint -> shell check generated orb.yml
 *   Publish dev version of orb with branch name and short git hash as version
     *   Ensure branch names encode properly
 *   Create a new branch, based off of current branch
-    *   Git gash should be appended to branch name
+    *   Git hash should be appended to branch name
     *   The CircleCI config updated to import the dev orb just created
 *   Push to trigger new build
 *   Run integration testing
 *   Clean up old branch
-    *   Post link to PR
+    *   Post link to PR [WHERE?]
+    
+## PR Review and Merge [Maintainers]
+* At least 1 non-author must review and approve changes.
+* Reviewer or Author (if maintainer) may merge once approved.
+* Merge message must indicate the semantic impact using `[semver:FOO]` in the commit *subject* where FOO is (major, minor, patch)
+
+
+## Master Release Stream
+* Master build must repeat any automated testing used in feature branch
+* Orb should be promoted based on `[semver:XXXX]` commit indicator ([example](https://github.com/CircleCI-Public/cloudfoundry-orb/pull/18/files#diff-1d37e48f9ceff6d8030570cd36286a61R67) )
+   * Absense of semver in commit subject must skip release
+* Production version of Orb should be added to the original PR by cpe-bot ([example](https://github.com/CircleCI-Public/cloudfoundry-orb/pull/18/files#diff-1d37e48f9ceff6d8030570cd36286a61R77))
+
 
 
 ## Examples
 
 As we implement this process with orbs, we should provide CircleCI config examples here and/or link out to them.
+
+- Using SemVer in Release Process [example](https://github.com/CircleCI-Public/cloudfoundry-orb/pull/18/files#diff-1d37e48f9ceff6d8030570cd36286a61R67) 
+- Adding Dev versions of orbs to open PRs [example](https://github.com/CircleCI-Public/cloudfoundry-orb/pull/18/files#diff-1d37e48f9ceff6d8030570cd36286a61R39)
+- Adding Prod version of orbs to closed PRs [example](https://github.com/CircleCI-Public/cloudfoundry-orb/pull/18/files#diff-1d37e48f9ceff6d8030570cd36286a61R77)
+- 
 
 
 # Future Release Process
