@@ -6,7 +6,7 @@ This file is no longer going to be updated but will remain up for the time being
 ---
 
 # Orb Best Practices Guidelines
-A collection best practices for authoring [orbs](https://circleci.com/docs/2.0/orb-intro/#section=configuration).
+A collection of best practices for authoring [orbs](https://circleci.com/docs/2.0/orb-intro/#section=configuration).
 
 CircleCI orbs are shareable packages of configuration elements, including jobs, commands, and executors. To begin learning how to create your own orb, check out our docs on [Reusable config](https://circleci.com/docs/2.0/reusing-config/) and get started with the [Orb Starter Kit (Beta)](https://github.com/CircleCI-Public/orb-starter-kit).
 
@@ -18,12 +18,12 @@ CircleCI orbs are shareable packages of configuration elements, including jobs, 
 *   **Meta data:**
     *   Ensure all Commands, Jobs, Executors, and Parameters have detailed descriptions.
     *   Include the code repo link in the Orb description.
-    *   Include link to website in description.
+    *   Include a link to the website in the description.
     *   Define any prerequisites such as obtaining an API key in the description.
     *   Be consistent and concise in naming your orb elements. For example, don't mix "kebab case" and "snake case".
     *   Naming:
-        * Your `namespace` should reflect the name of your oganization or company, of which may have many orbs.
-            *   ex: `circleci`, `vmware`, `cypress-io`
+        * Your `namespace` should reflect the name of your organization or company, of which may have many orbs.
+            *   ex: `circleci`, `VMware`, `cypress-io`
         * Your `orb name` should reflect the product, utility, or service with which this orb will interact with.
             *   ex: `node`, `codestream`, `cypress`
         *  Do not repeat information. ex: Any install command should simply be named `install` rather than `install-x` as the full command will be `orbName/install`
@@ -33,7 +33,7 @@ CircleCI orbs are shareable packages of configuration elements, including jobs, 
     *   Show Orb version as `x.y` (patch version may not need to be included)
     *   Example should include most common/simplest use case calling a top-level job or other base-case elements if no job is present.
     *   If applicable, you may want to showcase the use of [pre and post steps](https://circleci.com/docs/2.0/reusing-config/#using-pre-and-post-steps) in conjunction with an Orb’s Job. 
-    *   Example(s) should demonstrate common use case scenerios.
+    *   Example(s) should demonstrate common use case scenarios.
 *   **Commands:**
     *   Command names should be short and easily understood.
     *   In general, all Orbs should contain at least one Command. 
@@ -50,7 +50,7 @@ CircleCI orbs are shareable packages of configuration elements, including jobs, 
 *   **Parameters:**
     *   When possible, use defaults for parameters unless a user input is essential.
     *   Utilize the [“env_var_name” parameter type](https://circleci.com/docs/2.0/reusing-config/#environment-variable-name) to secure API keys or other sensitive data. 
-    *   [Injecting steps as a parameter](https://circleci.com/docs/2.0/reusing-config/#steps) is a useful way to run user defined steps within a job between your orb-defined steps.Good for if you need to perform an action both before and after user-defined tasks - for instance, you could run user-provided steps between your caching logic inside the command.
+    *   [Injecting steps as a parameter](https://circleci.com/docs/2.0/reusing-config/#steps) is a useful way to run user-defined steps within a job between your orb-defined steps.Good for if you need to perform an action both before and after user-defined tasks - for instance, you could run user-provided steps between your caching logic inside the command.
 *   **Jobs:**
     *   Jobs should utilize Commands defined within the Orb to orchestrate common use cases for this Orb.
     *   Plan for flexibility
@@ -73,7 +73,7 @@ CircleCI orbs are shareable packages of configuration elements, including jobs, 
         *   Utilize [semver versioning](https://semver.org/) (x.y.z)
             *   Major: Incompatible changes
             *   Minor: Add new features (backwards compatible)
-            *   Patch: Minor bug fixes, metadata updates, or other safe actions.
+            *   Patch: Minor bug fixes, metadata updates, or other safety actions.
     *   View our Orb Deployment best practices here: [https://docs.google.com/document/d/1MqQCo8aeYjvGJAa0v60L2FJelLFjWP1IgkWuBfMiC3c](https://docs.google.com/document/d/1MqQCo8aeYjvGJAa0v60L2FJelLFjWP1IgkWuBfMiC3c) [NOT COMPLETE]
     *   This section is handled automatically via the Orb Starter Kit.
 * GitHub/Bitbucket
