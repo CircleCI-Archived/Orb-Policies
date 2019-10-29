@@ -73,7 +73,7 @@ CircleCI orbs are shareable packages of configuration elements, including jobs, 
         *   Utilize [semver versioning](https://semver.org/) (x.y.z)
             *   Major: Incompatible changes
             *   Minor: Add new features (backwards compatible)
-            *   Patch: Minor bug fixes, metadata updates, or other safety actions.
+            *   Patch: Minor bug fixes, metadata updates, or other safe actions.
     *   View our Orb Deployment best practices here: [https://docs.google.com/document/d/1MqQCo8aeYjvGJAa0v60L2FJelLFjWP1IgkWuBfMiC3c](https://docs.google.com/document/d/1MqQCo8aeYjvGJAa0v60L2FJelLFjWP1IgkWuBfMiC3c) [NOT COMPLETE]
     *   This section is handled automatically via the Orb Starter Kit.
 * GitHub/Bitbucket
